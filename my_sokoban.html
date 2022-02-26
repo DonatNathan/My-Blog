@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="blog.css" />
+    <title>DONAT - My Sokoban</title>
+  </head>
+  <body>
+    <header>
+      <a href="my_page.html"><img src="Pictures/luffy_sparrow.jpg" alt="Logo" class="logo" /></a>
+      <h4 class="titre">MY DEFENDER</h4>
+      <nav class="projects">
+        <p><a href="projects.html">ALL</a></p>
+        <p><a href="my_defender.html">My_Defender</a></p>
+        <p><a href="my_runner.html">My_Runner</a></p>
+        <p><a href="my_hunter.html">My_Hunter</a></p>
+        <p><a href="my_rpg.html">My_RPG</a></p>
+        <p><a href="my_sokoban.html">My_Sokoban</a></p>
+      </nav>
+      <h1>LE PROJET</h1>
+      <p>Le but de ce projet est de récréer le jeu du <em>sokoban</em> de façon "semi graphique". C'est à dire que c'est un jeu en terminal mais dans un terminal dynamique. Pour se faire, nous avons donc utilisé la librairie <em>ncurses</em>. </p>
+      <nav class="left">
+        <h3>Table des matières</h3>
+        <ul>
+          <li><a href="#fonctionnement">FONCTIONNEMENT</a></li>
+          <li><a href="#problèmes">PROBLÈMES</a></li>
+          <li><a href="#bonus">BONUS</a></li>
+        </ul>
+      </nav>
+      <div class="image">
+        <img src="Pictures/sokoban.jpg" alt="Sokoban" class="img"/>
+      </div>
+    </header>
+    <section id="fonctionnement">
+      <h2>FONCTIONNEMENT</h2>
+      <p>Le my_sokoban était un projet assez simple et rapide à faire. La première étape, qui a pour moi été la plus dur, était d'apprendre à utiliser les différentes fonctions de la librairie ncurses. J'ai donc commencé pour coder une petite gestion d'erreur pour vérifier qu'il y avait bien le même nombre de caisses que de cibles et bien un seul joueur. Une fois cela fait, le fonctionnement de ce programme était tout simplement de changer la position du joueur et des caisses dans la map avant de la réafficher. Il a donc fallut gérer les différentes collisions : impossible de se déplacer près d'un mur, bouger les caisses si aucun obstacle ne bloque etc... Il a aussi fallut gérer la position des cibles de sortes à ce qu'elles se replace une fois que le joueur ou qu'une caisse a été posée par dessus. Pour finir, il fallait tester à chaque mouvement si le joueur avais gagné ou perdu. Donc si les caisses étaient toutes placées au bon endroit ou si toutes les caisses étaient bloquées.</p>
+    </section>
+    <section id="problèmes">
+      <h2>PROBLÈMES</h2>
+      <p>Le principal problème que j'ai eu, qui a été une erreur de ma part, a été de commencer en stockant ma map dans une string. Cela a donc donné naissance à beaucoup d'erreurs et de complications notemment au niveau de la gestion de map de tailles spéciales. J'ai donc du recommencer tout mon programme (après l'avoir presque entièrement terminé) et stocker ma map dans un tableau. Hormis cela je n'ai eu aucun probèmes majeurs.</p>
+    </section>
+    <section id="bonus">
+      <h2>BONUS</h2>
+      <p>Le seul bonus que j'ai fait pour le moment est cette page de mon blog qui explique les détails de ce projet. Par contre je compte bien ajouter à mon programme un timer qui va donner un temps maximum pour résoudre l'énigme.</p>
+    </section>
+    <footer>
+      <h3>Vous pouvez me suivre ici :</h3>
+      <p><a href="mailto:nathandonat@outlook.fr"><img src="Pictures/mail.png" alt="Mail" /></a>
+        <a href="https://github.com/DonatNathan"><img src="Pictures/github.png" alt="GitHub" /></a>
+        <a href="https://discord.gg/WZjBvKW8"><img src="Pictures/discord.png" alt="Discord" /></a>
+        <a href="https://www.instagram.com/nathandonatt/"><img src="Pictures/insta.png" alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/in/nathan-donat-filliod-548330228/"><img src="Pictures/linkedin.png" alt="Linkedin" /></a>
+        <a href="https://steamcommunity.com/profiles/76561198881107181/"><img src="Pictures/steam.png" alt="Steam" /></a>
+      </p>
+    </footer>
+  </body>
+</html>

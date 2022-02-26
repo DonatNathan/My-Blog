@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'supercell';
+    src: url('Fonts/supercell.ttf');
+}
+
+body
+{
+    background-image: url("Pictures/back.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1900px, 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header
+{
+    width: 90%;
+    align-self: center;
+}
+
+footer
+{
+    align-self: center;
+    margin-top: 3%;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+}
+
+section
+{
+    width: 80%;
+    margin-right: 5%;
+}
+
+.titre
+{
+    font-size: 64px;
+    text-align: center;
+    font-weight: bold;
+    color: brown;
+    margin-top: 3%;
+    font-family: 'supercell';
+}
+
+p
+{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+h1
+{
+    border: 3px black groove;
+    box-shadow: 3px 3px 3px black;
+    text-align: center;
+}
+
+h2
+{
+    text-align: left;
+    text-decoration: underline;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.img
+{
+    border: 5px black groove;
+}
+
+.projects
+{
+    display: flex;
+    justify-content: center;
+    background-color: #AF8278;
+    border: 5px white double;
+    border-radius: 30px 30px 30px 30px;
+    margin-top: -2%;
+    margin-bottom: 3%;
+}
+
+.projects p:hover
+{
+    font-size: 32px;
+    font-family: 'supercell';
+}
+
+.projects p
+{
+    font-size: 32px;
+    font-family: 'supercell';
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.projects a
+{
+    font-style: normal;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.projects a:hover
+{
+    color: #FFEFDD;
+}
+
+.left
+{
+    float: left;
+    border: 5px	black groove;
+    margin-left: -5%;
+}
+
+.logo
+{
+    border: 3px	cyan groove;
+    margin-left: -5%;
+    margin-top:	0.5%;
+    float: left;
+}
+
+
+a
+{
+    opacity: 0.8;
+}
+
+a:hover
+{
+    opacity: 1;
+}
+
+.image
+{
+    text-align: center;
+}
